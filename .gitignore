@@ -46,3 +46,5 @@ packages
 /CoCalculator/DCI.COCalculator.Web/wwwroot/PageLogs/ConfirmPasswordLogs
 .vscode
 .env
+_ReSharper
+_*
