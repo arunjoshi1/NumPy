@@ -71,3 +71,20 @@ print(alg.matrix_power(a, 2))
 # determinant of matrix
 a = np.arange(1, 5).reshape(2, 2)
 print('\n', round(alg.det(a)), '\n')
+
+# generators
+gen = (x for x in range(100000000000))  # with out generator gives u error
+# we use genrators for memory efficacy and  for better user performance
+print(next(gen))
+print(next(gen))
+
+
+# or create generator using yield keyword
+
+def create_generator(size):
+    for x in range(1, size):
+        yield (x)
+
+
+g = create_generator(10)
+print(next(g))
